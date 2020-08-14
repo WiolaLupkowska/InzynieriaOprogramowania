@@ -1,0 +1,114 @@
+git commit -m "uwrodc"
+git checkout -b pl
+
+
+git add src/main/java/Main.java
+git commit -m"powit po pl"
+git checkout master //robie  noego brancha
+git checkout -b eng
+git commit -m "powit po ang"
+//chce scalic 2 galezie
+git merge pl
+
+jak duzo konfliktow to VCS kliknac i w resolve conflicts
+
+po rozwiazaniu konfliktow 
+git commit -m "resolved"
+
+Microsoft Windows [Version 10.0.18362.657]
+(c) 2019 Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>git init
+Initialized empty Git repository in C:/Users/wiole_5ewf698/IdeaProjects/Calculator/.git/
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>ls --all
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>git remote add origin https://gitlab.com/WLupkowska/calculator.git
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>remote -v
+'remote' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>git remote -v
+origin  https://gitlab.com/WLupkowska/calculator.git (fetch)
+origin  https://gitlab.com/WLupkowska/calculator.git (push)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   src/main/java/CalculatorLauncher.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/main/java/CalculatorLauncher.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        Calculator.iml
+        pom.xml
+
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>git add -A
+warning: LF will be replaced by CRLF in pom.xml.
+The file will have its original line endings in your working directory
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>git source
+git: 'source' is not a git command. See 'git --help'.
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   Calculator.iml
+        new file:   pom.xml
+        new file:   src/main/java/CalculatorLauncher.java
+
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>git commit -m 'initial commit'
+error: pathspec 'commit'' did not match any file(s) known to git
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>git commit -m "initial commit"
+[master (root-commit) 30473cf] initial commit
+ 4 files changed, 22 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Calculator.iml
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/CalculatorLauncher.java
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>git push origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 920 bytes | 920.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+To https://gitlab.com/WLupkowska/calculator.git
+ * [new branch]      master -> master
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>git tag v0.0.1
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>git push origin v0.0.1
+Total 0 (delta 0), reused 0 (delta 0)
+To https://gitlab.com/WLupkowska/calculator.git
+ * [new tag]         v0.0.1 -> v0.0.1
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator>
+
+
+niestety w podanym przez Panią terminie mam zajęcia. Odpowiadają mi poniedziałek po 11, wtorek 11-15 i po 15, środa przed 11 i po 17,  czwartek przed 15

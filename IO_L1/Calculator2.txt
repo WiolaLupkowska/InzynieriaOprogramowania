@@ -1,0 +1,433 @@
+Microsoft Windows [Version 10.0.18362.657]
+(c) 2019 Microsoft Corporation. Wszelkie prawa zastrzeżone.
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>ls --all
+'ls' is not recognized as an internal or external command,
+
+
+
+
+
+                                                                                          C:\Users\wiole_5ewf698\Id
+eaProjects\Calculator2>git init
+Initialized empty Git repository in C:/Users/wiole_5ewf698/IdeaProjects/Calculator2/.git/
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>touch .gitignore
+'touch' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git remote add origin https://gitlab.com/WLupkowska/calculator2.git
+
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git remote -v
+origin  https://gitlab.com/WLupkowska/calculator2.git (fetch)
+origin  https://gitlab.com/WLupkowska/calculator2.git (push)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Calculator2.iml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        pom.xml
+
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git add -A
+warning: LF will be replaced by CRLF in pom.xml.
+The file will have its original line endings in your working directory
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git status
+On branch master
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   Calculator2.iml
+        new file:   pom.xml
+        new file:   src/main/java/CalculatorLauncher.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/main/java/CalculatorLauncher.java
+
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git add -A
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git commit -m "initial commit"
+[master (root-commit) 3484d1f] initial commit
+ 4 files changed, 22 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Calculator2.iml
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/CalculatorLauncher.java
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 925 bytes | 925.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+To https://gitlab.com/WLupkowska/calculator2.git
+ * [new branch]      master -> master
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git tag v0.0.1
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin v0.0.1
+Total 0 (delta 0), reused 0 (delta 0)
+To https://gitlab.com/WLupkowska/calculator2.git
+ * [new tag]         v0.0.1 -> v0.0.1
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git checkout -b dev
+Switched to a new branch 'dev'
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git status
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/main/java/Calculator.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/main/java/Calculator.java
+
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git add -A
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git status
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/main/java/Calculator.java
+
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git commit -m "Calculator"
+[dev 2c28c2f] Calculator
+ 1 file changed, 4 insertions(+)
+ create mode 100644 src/main/java/Calculator.java
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin dev
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 456 bytes | 228.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote:
+remote: To create a merge request for dev, visit:
+remote:   https://gitlab.com/WLupkowska/calculator2/-/merge_requests/new?merge_request%5Bsource_branch%5D=dev
+remote:
+To https://gitlab.com/WLupkowska/calculator2.git
+ * [new branch]      dev -> dev
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git status
+On branch dev
+nothing to commit, working tree clean
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git checkout -b featureDodawanie
+Switched to a new branch 'featureDodawanie'
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git add -A
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git status
+On branch featureDodawanie
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   src/main/java/Calculator.java
+
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git commit -m "umożliwienie dodawania"
+[featureDodawanie 0455bc4] umożliwienie dodawania
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin featureDodawanie
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 510 bytes | 510.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote:
+remote: To create a merge request for featureDodawanie, visit:
+remote:   https://gitlab.com/WLupkowska/calculator2/-/merge_requests/new?merge_request%5Bsource_branch%5D=featureDodawanie
+remote:
+To https://gitlab.com/WLupkowska/calculator2.git
+ * [new branch]      featureDodawanie -> featureDodawanie
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git checkout -b featureOdejmowanie
+Switched to a new branch 'featureOdejmowanie'
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git add -A
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git commit -m "umożliwienie odejmowania"
+[featureOdejmowanie dc820e5] umożliwienie odejmowania
+ 1 file changed, 4 insertions(+)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin featureOdejmowanie
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 523 bytes | 523.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote:
+remote: To create a merge request for featureOdejmowanie, visit:
+remote:   https://gitlab.com/WLupkowska/calculator2/-/merge_requests/new?merge_request%5Bsource_branch%5D=featureOdejmowanie
+remote:
+To https://gitlab.com/WLupkowska/calculator2.git
+ * [new branch]      featureOdejmowanie -> featureOdejmowanie
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git checkout dev
+Switched to branch 'dev'
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git merge featureDodawanie
+Updating 2c28c2f..0455bc4
+Fast-forward
+ src/main/java/Calculator.java | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git merge featureOdejmowanie
+Updating 0455bc4..dc820e5
+Fast-forward
+ src/main/java/Calculator.java | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git add -A
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git status
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/main/java/CalculatorTest.java
+
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git commit -m "testy + i - "
+[dev fab7efa] testy + i -
+ 1 file changed, 16 insertions(+)
+ create mode 100644 src/main/java/CalculatorTest.java
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin dev
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 639 bytes | 639.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote:
+remote: To create a merge request for dev, visit:
+remote:   https://gitlab.com/WLupkowska/calculator2/-/merge_requests/new?merge_request%5Bsource_branch%5D=dev
+remote:
+To https://gitlab.com/WLupkowska/calculator2.git
+   2c28c2f..fab7efa  dev -> dev
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git git checkout master
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git checkout master
+Switched to branch 'master'
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git checkout dev
+Switched to branch 'dev'
+M       src/main/java/CalculatorLauncher.java
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git tag v0.1.0
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin v0.1.0
+Total 0 (delta 0), reused 0 (delta 0)
+To https://gitlab.com/WLupkowska/calculator2.git
+ * [new tag]         v0.1.0 -> v0.1.0
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git checkout master
+Switched to branch 'master'
+M       src/main/java/CalculatorLauncher.java
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git merge dev
+Updating 3484d1f..fab7efa
+Fast-forward
+ src/main/java/Calculator.java     | 10 ++++++++++
+ src/main/java/CalculatorTest.java | 16 ++++++++++++++++
+ 2 files changed, 26 insertions(+)
+ create mode 100644 src/main/java/Calculator.java
+ create mode 100644 src/main/java/CalculatorTest.java
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git checkout -b featureMnozenie
+Switched to a new branch 'featureMnozenie'
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git add -A
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git commit -m "umożliwienie mnożenia"
+[featureMnozenie eebe7f6] umożliwienie mnożenia
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin featureMnozenie
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 555 bytes | 555.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote:
+remote: To create a merge request for featureMnozenie, visit:
+remote:   https://gitlab.com/WLupkowska/calculator2/-/merge_requests/new?merge_request%5Bsource_branch%5D=featureMnozenie
+remote:
+To https://gitlab.com/WLupkowska/calculator2.git
+ * [new branch]      featureMnozenie -> featureMnozenie
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git checkout -b featureDzielenie
+Switched to a new branch 'featureDzielenie'
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git add -A
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git commit -m "umożliwienie dzielenia bez obsługi wyjątku zera"
+[featureDzielenie 6b06293] umożliwienie dzielenia bez obsługi wyjątku zera
+ 1 file changed, 3 insertions(+)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin featureDzielenie
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 492 bytes | 492.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote:
+remote: To create a merge request for featureDzielenie, visit:
+remote:   https://gitlab.com/WLupkowska/calculator2/-/merge_requests/new?merge_request%5Bsource_branch%5D=featureDzielenie
+remote:
+To https://gitlab.com/WLupkowska/calculator2.git
+ * [new branch]      featureDzielenie -> featureDzielenie
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git tag v0.2.0
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin v0.2.0
+Total 0 (delta 0), reused 0 (delta 0)
+To https://gitlab.com/WLupkowska/calculator2.git
+ * [new tag]         v0.2.0 -> v0.2.0
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push --delete origin v0.2.0
+To https://gitlab.com/WLupkowska/calculator2.git
+ - [deleted]         v0.2.0
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git checkout dev
+Switched to branch 'dev'
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git merge featureMnozenie
+Updating fab7efa..eebe7f6
+Fast-forward
+ src/main/java/Calculator.java         | 5 +++++
+ src/main/java/CalculatorLauncher.java | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git merge featureDzielenie
+Updating eebe7f6..6b06293
+Fast-forward
+ src/main/java/Calculator.java | 3 +++
+ 1 file changed, 3 insertions(+)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git add -A
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git commit -m "testy * i /"
+[dev 5952edb] testy * i /
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin dev
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 540 bytes | 540.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote:
+remote: To create a merge request for dev, visit:
+remote:   https://gitlab.com/WLupkowska/calculator2/-/merge_requests/new?merge_request%5Bsource_branch%5D=dev
+remote:
+To https://gitlab.com/WLupkowska/calculator2.git
+   fab7efa..5952edb  dev -> dev
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git checkout master
+Switched to branch 'master'
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git merge dev
+Updating fab7efa..5952edb
+Fast-forward
+ src/main/java/Calculator.java         | 8 ++++++++
+ src/main/java/CalculatorLauncher.java | 2 +-
+ src/main/java/CalculatorTest.java     | 7 ++++++-
+ 3 files changed, 15 insertions(+), 2 deletions(-)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git tag v0.2.0
+fatal: tag 'v0.2.0' already exists
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git tag -d v0.2.0
+Deleted tag 'v0.2.0' (was 6b06293)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git tag v0.2.0
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin v0.0.2
+error: src refspec v0.0.2 does not match any
+error: failed to push some refs to 'https://gitlab.com/WLupkowska/calculator2.git'
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin v0.2.0
+Total 0 (delta 0), reused 0 (delta 0)
+To https://gitlab.com/WLupkowska/calculator2.git
+ * [new tag]         v0.2.0 -> v0.2.0
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git checkout -b hotflix
+Switched to a new branch 'hotflix'
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git add -A
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git commit -m "obsługa dzielenia przez 0"
+[hotflix f05eec5] obsługa dzielenia przez 0
+ 2 files changed, 10 insertions(+), 3 deletions(-)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin hotflix
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 703 bytes | 234.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote:
+remote: To create a merge request for hotflix, visit:
+remote:   https://gitlab.com/WLupkowska/calculator2/-/merge_requests/new?merge_request%5Bsource_branch%5D=hotflix
+remote:
+To https://gitlab.com/WLupkowska/calculator2.git
+ * [new branch]      hotflix -> hotflix
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git tag v0.2.1
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin v0.2.1
+Total 0 (delta 0), reused 0 (delta 0)
+To https://gitlab.com/WLupkowska/calculator2.git
+ * [new tag]         v0.2.1 -> v0.2.1
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git checkout master
+Switched to branch 'master'
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git merge hotflix
+Updating 5952edb..f05eec5
+Fast-forward
+ src/main/java/Calculator.java     | 9 ++++++++-
+ src/main/java/CalculatorTest.java | 4 ++--
+ 2 files changed, 10 insertions(+), 3 deletions(-)
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>git push origin master
+Total 0 (delta 0), reused 0 (delta 0)
+To https://gitlab.com/WLupkowska/calculator2.git
+   3484d1f..f05eec5  master -> master
+
+C:\Users\wiole_5ewf698\IdeaProjects\Calculator2>

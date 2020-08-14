@@ -1,0 +1,11 @@
+Wiola@LAPTOP-NRMGIDR6 MINGW64 ~/Desktop (master)
+$ curl www.gnu.org
+
+Wiola@LAPTOP-NRMGIDR6 MINGW64 ~/Desktop (master)
+$ curl -o gnuIndex.html www.gnu.org
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 29666    0 29666    0     0  80614      0 --:--:-- --:--:-- --:--:-- 80395
+
+
+
